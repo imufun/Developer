@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-single-post',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-post.component.css']
 })
 export class SinglePostComponent implements OnInit {
+
+    @Input() postTitle: String =  'Default title';
+
 
   constructor() { }
 

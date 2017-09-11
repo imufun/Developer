@@ -6,14 +6,17 @@ import {PostsContainerComponent} from './posts-container/posts-container.compone
 import {NavigationComponent} from './navigation/navigation.component';
 import { SinglePostComponent } from './posts-container/single-post/single-post.component';
 import {PostsService} from "./shared/posts.service";
+import { PostChildComponent } from './post-child/post-child.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         PostsContainerComponent,
         NavigationComponent,
-        SinglePostComponent
+        SinglePostComponent,
+        PostChildComponent
     ],
+    entryComponents: [SinglePostComponent],
     imports: [
         BrowserModule
     ],
